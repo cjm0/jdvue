@@ -3,23 +3,10 @@ import App from './App.vue'
 import router from './router'
 
 
-
-import '../lib/index.min.css'
-
-// import '../lib/index.min.js'
-// Vue.use(jdvue)
-
-/*
-    import {FullLoad, Loading, Toast} from './components/index.js'
-    Vue.component(FullLoad.name, FullLoad)
-    Vue.component(Loading.name, Loading)
-    Vue.component(Toast.name, Toast)
-*/
-
-import jdvue from './components/index.js'
+// 引入插件
+import jdvue from 'jdvue/lib/index.js'
+import 'jdvue/lib/index.css'
 Vue.use(jdvue)
-
-
 
 
 // 路由跳转前拦截

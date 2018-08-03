@@ -1,5 +1,6 @@
 import '../assets/lib.less'
 
+
 import FullLoad from './full-load/index.vue';
 import Loading from './loading/index.vue';
 import Toast from './toast/index.vue';
@@ -9,6 +10,7 @@ const components = {
     Loading,
     Toast,
 }
+
 
 let ua = navigator.userAgent.toLowerCase()
 window.config = {
@@ -22,28 +24,30 @@ window.config = {
     }
 }
 
-const version = '1.0.1'
 const install = (Vue, opts = {}) => {
     Object.keys(components).forEach(key => {
         Vue.component(key, components[key])
     })
 }
+
 if (typeof window !== 'undefined' && window.Vue) {
     install(window.Vue)
 }
 
-// 可以全局 也可以单个引用
+
+const version = '1.0.4'
+// 单个用
 export {
-    install,
     version,
+    install,
     FullLoad,
     Loading,
     Toast,
 }
-
+// 全局用
 export default {
-    install,
     version,
+    install
 }
 
 

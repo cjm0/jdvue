@@ -1,11 +1,10 @@
 {
   "name": "jdvue",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A Vue.js 2.0 Mobile UI at JinDan",
   "author": "chenjianmin <129300400@qq.com>",
-  "main": "lib/jdvue.min.js",
-  "unpkg": "lib/index.js",
-  "style": "lib/index.min.css",
+  "main": "lib/index.js",
+  "style": "lib/index.css",
   "private": false,
   "scripts": {
     "start": "webpack --config config/webpack.dll.js",
@@ -53,9 +52,9 @@
     "webpack-dev-server": "^3.1.4",
     "webpack-merge": "^4.1.2"
   },
-  "repository": { 
-    "type": "git", 
-    "url": "https://gitee.com/cjm0/jdvue" 
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/cjm0/jdvue"
   },
   "keywords": [
     "jindan",

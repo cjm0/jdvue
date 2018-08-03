@@ -41,9 +41,9 @@ export default {
         return {}
     },
     created() {
+        document.title = 'jdvue 组件测试'
         Toast.show('msg')
         Loading.show(3000, true)
-
     }
 }
 </script>
