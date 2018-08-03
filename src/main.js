@@ -4,10 +4,9 @@ import router from './router'
 
 
 // 引入插件
-import jdvue from 'jdvue/lib/index.js'
 import 'jdvue/lib/index.css'
+import jdvue from 'jdvue/lib/index.js'
 Vue.use(jdvue)
-
 
 // 路由跳转前拦截
 router.beforeEach((to, from, next) => {

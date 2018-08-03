@@ -13,8 +13,6 @@
     "lib": "webpack --progress --config config/webpack.lib.js"
   },
   "devDependencies": {
-    "vue": "^2.5.16",
-    "vue-router": "^3.0.1",
     "autoprefixer": "^8.5.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
@@ -37,6 +35,7 @@
     "file-loader": "^1.1.11",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
+    "jdvue": "^1.0.4",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "mini-css-extract-plugin": "^0.4.0",
@@ -44,7 +43,9 @@
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "url-loader": "^1.0.1",
+    "vue": "^2.5.16",
     "vue-loader": "^15.0.11",
+    "vue-router": "^3.0.1",
     "vue-style-loader": "^4.1.0",
     "vue-template-compiler": "^2.5.16",
     "webpack": "^4.8.3",

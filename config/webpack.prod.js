@@ -16,9 +16,9 @@ module.exports = merge(baseWebpackConfig, {
     },
     plugins: [
         new CleanWebpackPlugin(
-            `${config.base.fileName}/`, // 删除匹配的文件
+            ['dist/*.html', 'dist/static/js', 'dist/static/css', 'dist/static/img', 'dist/static/fonts', 'dist/static/media'], // 删除匹配的文件
             {
-                root: '/', // 重置到根路经
+                root: path.resolve(__dirname, '../'), // 重置到根路经
                 exclude: ['vendor.dll.js', 'vendor.manifest.json'], // 这几个文件不删除
                 verbose: true, // 开启在控制台输出信息
                 dry: false, // 启用删除文件
