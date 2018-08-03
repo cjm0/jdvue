@@ -1,37 +1,43 @@
-# jdvue 
+<!-- 
+# Markdown 语法
+    # a         标题
 
-#### 项目介绍
-金蛋理财 vue 组件库
+    - a     无序列表
+    1. a    有序列表
 
-#### 软件架构
-软件架构说明
+    ![]()   插入图片 文字+地址
+    []()    插入链接
 
+    ` a `   代码
+    > a     引用
 
-#### 安装教程
+    * a *       斜体
+    ** a **     粗体
 
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
+    ***         分割线 
+    行尾添加两个空格加回车表示换行
+    定义脚注[^1]
+-->
 
 
-#### 码云特技
+## 金蛋理财App vue ui 组件库
 
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [http://git.mydoc.io/](http://git.mydoc.io/)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1. npm i jdvue -S 
+2. import 'jdvue'
+3. Vue.use(jdvue)
+
+
+
+#### tip
+- [网站地址](https://bm.jindanlicai.com)
+- [代码库地址](https://gitee.com/cjm0/jdvue)  
+
+
+
+
+
+
+
+
+
+

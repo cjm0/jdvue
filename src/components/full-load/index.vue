@@ -38,5 +38,5 @@ export default {
             hide: this.hide
         }
     }
-}
+};
 </script>

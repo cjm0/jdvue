@@ -1,23 +1,33 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import './assets/common.js'
-import jdvue from './components'
+
+
+
+import '../lib/index.min.css'
+
+// import '../lib/index.min.js'
+// Vue.use(jdvue)
+
+/*
+    import {FullLoad, Loading, Toast} from './components/index.js'
+    Vue.component(FullLoad.name, FullLoad)
+    Vue.component(Loading.name, Loading)
+    Vue.component(Toast.name, Toast)
+*/
+
+import jdvue from './components/index.js'
 Vue.use(jdvue)
 
-// 移动端修复点击延迟
-import FastClick from 'fastclick' 
-if ('addEventListener' in document) {
-    document.addEventListener('load', function() {
-        FastClick.attach(document.body);
-    }, false);
-}
+
+
 
 // 路由跳转前拦截
 router.beforeEach((to, from, next) => {
     next()
     window.scrollTo(0, 0)
 })
+
 
 // 兼容ie支持promise
 window.Promise = Promise

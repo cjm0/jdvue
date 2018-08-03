@@ -1,20 +1,21 @@
 {
   "name": "jdvue",
-  "version": "1.0.1",
-  "description": "A jindanlicai vue component ",
+  "version": "1.0.2",
+  "description": "A Vue.js 2.0 Mobile UI at JinDan",
   "author": "chenjianmin <129300400@qq.com>",
-  "main": "dist/jdvue.js",
+  "main": "lib/jdvue.min.js",
+  "unpkg": "lib/index.js",
+  "style": "lib/index.min.css",
   "private": false,
   "scripts": {
     "start": "webpack --config config/webpack.dll.js",
     "dev": "webpack-dev-server --progress --config config/webpack.dev.js",
-    "build": "webpack --progress --config config/webpack.prod.js"
-  },
-  "dependencies": {
-    "vue": "^2.5.16",
-    "vue-router": "^3.0.1"
+    "build": "webpack --progress --config config/webpack.prod.js",
+    "lib": "webpack --progress --config config/webpack.lib.js"
   },
   "devDependencies": {
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1",
     "autoprefixer": "^8.5.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
@@ -52,14 +53,19 @@
     "webpack-dev-server": "^3.1.4",
     "webpack-merge": "^4.1.2"
   },
-  "license": "ISC",
+  "repository": { 
+    "type": "git", 
+    "url": "https://gitee.com/cjm0/jdvue" 
+  },
+  "keywords": [
+    "jindan",
+    "vue",
+    "component"
+  ],
+  "license": "MIT",
   "engines": {
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
-  },
-  "repository": { 
-    "type": "git", 
-    "url": "https://github.com/yucccc/vue-pay-keyboard" 
   },
   "browserslist": [
     "> 1%",
