@@ -29,7 +29,7 @@ module.exports = merge(baseWebpackConfig, {
             context: path.join(__dirname, '..'), // 和dllplugin里面的context一致
         }),
         new MiniCssExtractPlugin({ // 提取css
-            filename: 'css/[name]-[hash:4].css'
+            filename: 'css/[name]-[hash:6].css'
         }),
         new OptimizeCss({ // 压缩提取的css
             assetNameRegExp: /\.css$/g,

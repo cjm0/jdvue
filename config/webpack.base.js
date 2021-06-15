@@ -4,10 +4,12 @@ const webpack = require('webpack')
 const autoprefixer = require('autoprefixer')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+
 // 处理路径
 function resolve (dir) { 
     return path.join(__dirname, '..', dir)
 }
+
 // eslint检测
 const createLintingRule = () => ({ 
     test: /\.(js|vue)$/,
@@ -19,6 +21,7 @@ const createLintingRule = () => ({
         emitWarning: true
     }
 })
+
 // 获取当前环境
 const prod = process.env.NODE_ENV === 'production' 
 

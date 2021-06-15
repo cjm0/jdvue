@@ -1,6 +1,7 @@
 import './common.less'
 
 let ua = navigator.userAgent.toLowerCase()
+
 window.config = {
     load: null,
     system: {

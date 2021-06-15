@@ -31,7 +31,6 @@ export default {
         hide() {
             this.text = ''
             clearTimeout(timer)
-            timer = null;
         },
         show(text, op) {
             this.hide()
@@ -40,6 +39,7 @@ export default {
             } else {
                 this.option = Object.assign({}, option)
             }
+            
             timer = setTimeout(() => {
                 this.text = ''
             }, this.option.time)

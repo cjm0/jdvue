@@ -45,5 +45,5 @@ export default {
         Toast.show('msg')
         Loading.show(3000, true)
     }
-}
+};
 </script>

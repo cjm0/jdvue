@@ -7,7 +7,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 module.exports = {
     mode: 'production', // 启用生产模式配置
     entry: {
-        //如果使用了chrome的vue-devtool，那打包的时候把vue也排除掉，因为压缩过的vue是不能使用vue-devtool的
+        // 如果使用了chrome的vue-devtool，那打包的时候把vue也排除掉，因为压缩过的vue是不能使用vue-devtool的
         vendor: ['vue-router']
     },
     output: {

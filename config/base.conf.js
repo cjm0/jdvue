@@ -1,4 +1,6 @@
+
 const os = require('os')
+
 const getIp = () => { // 获取本地ip
     var interfaces = os.networkInterfaces();
     for (var devName in interfaces) {

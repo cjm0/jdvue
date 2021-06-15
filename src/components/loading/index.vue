@@ -5,6 +5,7 @@
             svg.v-loading-circular(v-if="type === 'circular'", viewBox="25 25 50 50")
                 circle(cx="50", cy="50", r="20", fill="none")
 </template>
+
 <script>
 const prefixCls = 'v-loading-';
 export default {
